@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            background-color: #f0f2f5; /* Light grey background */
+            color: #333; /* Dark grey text */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #60439f; /* Dark grey background */
+            color: #61dafb; /* Light blue text */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        /* Navigation Styles */
+        nav {
+            background: linear-gradient(90deg, #0072C6, #004F91); /* Blue gradient background */
+            color: #FFF;
+            padding: 20px 0; /* Increase padding for larger size */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+            padding: 10px 15px; /* Increase padding for larger clickable area */
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 18px; /* Increase font size */
+        }
+        nav ul li a:hover {
+            background-color: #61dafb; /* Light blue on hover */
+        }
+
+        /* Image Gallery Styles */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            gap: 20px; /* Space between images */
+            margin: 20px 0;
+        }
+        .image-box {
+            position: relative; /* Enable positioning for overlay */
+            background-color: #000; /* Black background for image box */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            overflow: hidden; /* Ensure images fit within the box */
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+        .image-gallery h1 {
+            grid-column: 1 / -1; /* Span the heading across all columns */
+            text-align: center;
+            color: red;
+            font-size: 35px;
+            background-color: #282c34;
+            padding: 10px;
+        }
+
+        
+              .image-box:hover:before {
+            opacity: 1;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #282c34; /* Dark grey background */
+            color: #61dafb; /* Light blue text */
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GALLERY</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="all">
+        <section class="image-gallery">
+            <h1>CLASH OF CLANS</h1>
+            <div class="image-box"><img src="images/coc1.png" alt="Clash of Clans"></div>
+            <div class="image-box"><img src="images/coc2.png" alt="Clash of Clans"></div>
+            <div class="image-box"><img src="images/coc3.png" alt="Clash of Clans"></div>
+            <div class="image-box"><img src="images/coc4.png" alt="Clash of Clans"></div>
+        </section>
+
+        <section class="image-gallery">
+            <h1>CLASH ROYALE</h1>
+            <div class="image-box"><img src="images/cr1.png" alt="Clash Royale"></div>
+            <div class="image-box"><img src="images/cr2.png" alt="Clash Royale"></div>
+            <div class="image-box"><img src="images/cr3.png" alt="Clash Royale"></div>
+            <div class="image-box"><img src="images/cr4.png" alt="Clash Royale"></div>
+        </section>
+
+        <section class="image-gallery">
+            <h1>HAY DAY</h1>
+            <div class="image-box"><img src="images/hd1.png" alt="Hay Day"></div>
+            <div class="image-box"><img src="images/hd2.png" alt="Hay Day"></div>
+            <div class="image-box"><img src="images/hd3.png" alt="Hay Day"></div>
+            <div class="image-box"><img src="images/hd4.png" alt="Hay Day"></div>
+        </section>
+
+        <section class="image-gallery">
+            <h1>BOOM BEACH</h1>
+            <div class="image-box"><img src="images/bb1.png" alt="Boom Beach"></div>
+            <div class="image-box"><img src="images/bb2.png" alt="Boom Beach"></div>
+            <div class="image-box"><img src="images/bb3.png" alt="Boom Beach"></div>
+            <div class="image-box"><img src="images/bb4.png" alt="Boom Beach"></div>
+        </section>
+
+        <section class="image-gallery">
+            <h1>BRAWL STARS</h1>
+            <div class="image-box"><img src="images/bs1.png" alt="Brawl Stars"></div>
+            <div class="image-box"><img src="images/bs2.png" alt="Brawl Stars"></div>
+            <div class="image-box"><img src="images/bs3.png" alt="Brawl Stars"></div>
+            <div class="image-box"><img src="images/bs4.png" alt="Brawl Stars"></div>
+        </section>
+
+        <section class="image-gallery">
+            <h1>SQUAD BUSTERS</h1>
+            <div class="image-box"><img src="images/sb1.png" alt="Squad Busters"></div>
+            <div class="image-box"><img src="images/sb2.png" alt="Squad Busters"></div>
+            <div class="image-box"><img src="images/sb3.png" alt="Squad Busters"></div>
+            <div class="image-box"><img src="images/sb4.png" alt="Squad Busters"></div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 SUPER CELL. All rights reserved.
+    </footer>
+</body>
+</html>

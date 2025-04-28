@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMES</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            background-color: #f0f2f5; /* Light grey background */
+            color: #333; /* Dark grey text */
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #60439f; /* Dark grey background */
+            color: #61dafb; /* Light blue text */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        /* Navigation Styles */
+        nav {
+            background: linear-gradient(90deg, #0072C6, #004F91); /* Blue gradient background */
+            color: #FFF;
+            padding: 20px 0; /* Increase padding for larger size */
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+            padding: 10px 15px; /* Increase padding for larger clickable area */
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 18px; /* Increase font size */
+        }
+        nav ul li a:hover {
+            background-color: #61dafb; /* Light blue on hover */
+        }
+
+        /* Video Section */
+        .video-container {
+            position: relative;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            overflow: hidden;
+        }
+
+        .intro-video {
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #282c34; /* Dark grey background */
+            color: #61dafb; /* Light blue text */
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+
+        .ALL {
+            text-align: center;
+            font-size: 25px;
+            color: red;
+        }
+
+        /* Image Gallery Styles */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: 1fr; /* One column to handle full-width background images */
+            gap: 20px; /* Space between sections */
+            margin: 20px;
+        }
+
+        .image-box {
+            background-size: cover; /* Cover the entire section with the background image */
+            background-position: center; /* Center the background image */
+            padding: 100px 20px; /* Add padding to ensure content is readable */
+            color: white; /* Text color for readability */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-box h1, .image-box p {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.5s, color 0.5s, opacity 0.5s; /* Add transition for background, text color, and opacity */
+            opacity: 0; /* Initially hidden */
+        }
+
+        .image-box:hover h1, .image-box:hover p {
+            background-color: rgba(0, 0, 0, 0.5); /* Lighter semi-transparent background on hover */
+            opacity: 1; /* Fade in */
+        }
+
+        .image-box h1 {
+            color: red; /* Red heading text color */
+        }
+
+        .image-box p {
+            color: rgb(255, 255, 255);
+            background-color: #f0f2f5;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GAMES</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Video Section -->
+    <div class="video-container">
+        <video class="intro-video" autoplay muted loop>
+            <source src="viddeo/super cell games.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <br>
+
+    <div class="ALL">
+        <section class="image-gallery">
+            <div class="image-box" style="background-image: url('coc1.png');">
+                <h1>CLASH OF CLANS</h1>
+                <p>The game is set in a fantasy-themed persistent world where the player is a chief of a village. Clash of Clans tasks players to build their own village using the resources gained from attacking other players' villages with troops, earning rewards, buying them with medals or by producing them at their own village. Players can conjoin to create clans - groups of up to fifty people - who can then participate in Clan Wars together, donate and receive troops, and chat with each other.</p>
+            </div>
+            <div class="image-box" style="background-image: url('cr1.png');">
+                <h1>CLASH ROYALE</h1>
+                <p>Clash Royale is a tower rush video game which puts players in games featuring two or four players (1v1 or 2v2) in which the objective is to destroy more towers than their opponent(s), with each destroyed tower being represented as a "crown". Destruction of the opponent's "King's Tower" results in an instantaneous "three-crown" victory. Matches last three minutes, and if both of the players/teams have an equal number of crowns (or none at all) at that point, the match continues into a two-minute overtime period. Here, the player who destroys an opposing tower wins instantaneously. If no towers are destroyed during overtime, there is a tiebreaker, where the tower with the lowest health is destroyed. If two towers have the same health, there is a draw. In rare instances, if the King's Tower is destroyed at the same time by both players, this also results in a draw.</p>
+            </div>
+            <div class="image-box" style="background-image: url('hd1.png');">
+                <h1>HAY DAY</h1>
+                <p>Hay Day is a farming simulation game where players can grow crops and feed livestock. Players can sell goods in exchange for coins and experience points. When they get enough experience points, they go up a level in the game, which unlocks more features, such as new crops, goods and livestock.</p>
+            </div>
+            <div class="image-box" style="background-image: url('bb1.png');">
+                <h1>BOOM BEACH</h1>
+                <p>Boom Beach is a strategy game that combines attacks on and from other players with attacks against computer-generated (NPC) bases. The game's storyline is set in a tropical archipelago with the player on an island with defenses and troops (similar to Supercell's Clash of Clans game). Boom Beach combines single-player campaign play as well as the ability to attack other players in multiplayer mode on the same world map. Featuring an expansive world map that expands as the player progresses, the game pits the player against an enemy known as "The Blackguard", a military force who is invading the archipelago and enslaving the locals for the valuable Power Stones found throughout the archipelago (which can also be used by the player to build buff-providing statues). Computer-generated Blackguard bases often appear on the map, and the player can destroy them for resources. Other notable features on the map include resource bases, which improve resource generation when seized and can be contested by multiple players, as well as dive spots where the player can send a submarine to search for treasure provided they have built it.</p>
+            </div>
+            <div class="image-box" style="background-image: url('bs1.png');">
+                <h1>BRAWL STARS</h1>
+                <p>In Brawl Stars, players battle against other players or AI opponents in multiple game modes. Players can choose between different Brawlers that they have unlocked through the Starr Road, the Brawl Pass, the Trophy Road, or purchased through the Shop to use in battles. In December 2022, Boxes were removed, and all previous methods to get them were replaced with credits and chroma credits, which are used to unlock Brawlers, who are now mostly placed on the "Starr Road". In addition, it is possible to purchase skins with Gems, Bling, and Coins, or unlock them through the Brawl Pass, which will alter the appearance, animations, effects, and/or sounds of Brawlers.</p>
+            </div>
+            <div class="image-box" style="background-image: url('sb1.png');">
+                <h1>SQUAD BUSTERS</h1>
+                <p>It is a casual strategy game in which the player collects coins and gems from other squads, from loot scattered on the map, and from monsters. Coins allow you to purchase chests with which you can get new characters to join your squad. Gems allow you to rank in the game, since the player with the most gems when time ends wins. Squad Busters includes characters from Supercell games: Clash of Clans, Hay Day, Boom Beach, Clash Royale and Brawl Stars.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 SUPER CELL. All rights reserved.
+    </footer>
+</body>
+</html>
+

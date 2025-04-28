@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #60439f;
+            color: #61dafb;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation Styles */
+        nav {
+            background: linear-gradient(90deg, #0072C6, #004F91);
+            color: #FFF;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            background-color: #61dafb;
+        }
+
+        /* Background Section Styles */
+        .background-section {
+            position: relative;
+            background-image: url("images/about\ background.jpg ");
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .background-section h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Body Content Styles */
+        .body1 h1 {
+            text-align: center;
+            color: black;
+            font-size: 2em;
+            text-decoration: underline;
+        }
+
+        .body1 p {
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .body1 ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            list-style: none;
+            margin: 0 auto;
+            max-width: 90%;
+            text-align: center;
+        }
+
+        .body1 ul li {
+            color: crimson;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .body2 h1 {
+            text-align: center;
+            color: black;
+            font-size: 1.8em;
+            text-decoration: underline;
+        }
+
+        .body2 p {
+            font-size: 1.1em;
+            color: #333;
+            margin: 15px 20px;
+            line-height: 1.6;
+        }
+
+        .body22 {
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+
+        .end h1 {
+            color: crimson;
+            text-align: center;
+            font-size: 1.8em;
+            margin: 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #282c34;
+            color: #61dafb;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                margin: 5px;
+            }
+
+            .background-section {
+                height: 40vh;
+            }
+
+            .background-section h1 {
+                font-size: 2em;
+            }
+
+            .body1 ul {
+                flex-direction: column;
+            }
+
+            .body1 ul li {
+                font-size: 1.2em;
+            }
+
+            .body2 p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .background-section h1 {
+                font-size: 1.5em;
+                padding: 10px;
+            }
+
+            .body1 p, .body2 p {
+                font-size: 0.9em;
+                padding: 15px;
+            }
+
+            .body1 ul li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ABOUT US</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   
+    <section class="background-section">
+        <h1>THE BEST PEOPLE TEAMS MAKE THE BEST GAMES*</h1>
+    </section>
+    <br>
+    <section class="body1">
+        <h1>Supercell</h1>
+        <p>Supercell is a game company based in Helsinki, Finland, with offices in San Francisco, Seoul, and Shanghai. Since our launch in 2010, we've brought five games to the global market – Hay Day, Clash of Clans, Boom Beach, Clash Royale, and Brawl Stars. Our dream is to create great games that as many people as possible play for years and that are remembered forever.</p>
+        <ul>
+            <li>565 Supercellians</li>
+            <li>4 Offices</li>
+            <li>40+ Nationalities</li>
+            <li>5 Live Games</li>
+        </ul>
+    </section>
+
+    <br>
+    <section class="body2">
+        <h1>Why We Are Here</h1>
+        <div class="body22">
+            <p>Supercell was founded on the idea of giving game developers and teams the independence to decide what kinds of games they make and how they choose to make them. Over a decade and five global games later, our dream still stands: to create great games that as many people as possible play for years and that are remembered forever.</p>
+            <p>We believe games have the power to bring people around the world together and closer to each other. We work to create new, innovative, memorable experiences no one has played before. This is why we try to design games that excite wide and diverse player communities as well as to expand the audience for otherwise smaller “niche” game concepts.</p>
+            <p>There’s no simple recipe or magic formula to achieve our dream. What we do know, however, is that without players Supercell doesn’t exist. Creating lovable worlds and characters that players want to come back to over and over again is at the heart of how we design and operate our games.</p>
+        </div>
+    </section>
+
+    <br>
+    <section class="end">
+        <h1>In the end, the question we ask ourselves is: “Are we building something that could be important?”</h1>
+    </section>
+
+    <footer>
+        &copy; 2024 SUPER CELL. All rights reserved.
+    </footer>
+</body>
+</html>

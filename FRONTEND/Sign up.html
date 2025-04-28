@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - SUPER CELL</title>
+    <link rel="stylesheet" href="/FRONTEND/index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-container {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .signup-container h1 {
+            font-size: 2em;
+            color: #60439f;
+            margin-bottom: 20px;
+        }
+
+        .signup-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .signup-container input[type="text"],
+        .signup-container input[type="email"],
+        .signup-container input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .signup-container button {
+            padding: 10px;
+            font-size: 1em;
+            background-color: #60439f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .signup-container button:hover {
+            background-color: #502e8a;
+        }
+
+        .signup-container a {
+            color: #60439f;
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .signup-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form action="/FRONTEND/welcome.html" method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm your password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <a href="/FRONTEND/login.html">Already have an account? Login</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: #f0f2f5; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+/* Header Styles */
+header {
+    background-color: #60439f; /* Dark grey background */
+    color: #61dafb; /* Light blue text */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Navigation Styles */
+nav {
+    background: linear-gradient(90deg, #0072C6, #004F91); /* Blue gradient background */
+    color: #FFF;
+    padding: 20px 0; /* Increase padding for larger size */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 15px; /* Increase padding for larger clickable area */
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 18px; /* Increase font size */
+}
+nav ul li a:hover {
+    background-color: #61dafb; /* Light blue on hover */
+}
+
+/* Video Section */
+.video-container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.intro-video {
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.video-overlay h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ffcb05; /* Yellow text */
+}
+.video-overlay p {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff; /* White text */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 10px;
+    margin-top: -50px;
+    z-index: 1;
+    position: relative;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px; /* Space between images */
+    margin: 20px 0;
+}
+.image-box {
+    background-color: #000000; /* White background for image box */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    overflow: hidden; /* Ensure images fit within the box */
+}
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #282c34; /* Dark grey background */
+    color: #61dafb; /* Light blue text */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Header1 and Header2 Styles */
+.header1 {
+    color: #d32f2f; /* Crimson */
+    text-align: center;
+}
+.header2 {
+    color: #d32f2f; /* Crimson */
+}
+
